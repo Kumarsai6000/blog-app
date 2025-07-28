@@ -15,6 +15,8 @@ app.use("/api/v1/services", serviceRoutes);
 app.use("/api/v1/blogs", blogRoutes);
 app.use("/api/v1/contact", contactRoutes);
 app.use("/api/v1/enquiry", enquiryRoutes);
+const cors = require("cors");
+app.use(cors());
 
 // mongoose
 //   .connect(process.env.MONGO_URL)
